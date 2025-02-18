@@ -34,11 +34,16 @@ Follow the steps below to set up and run the project locally.
    ```sh
    php artisan key:generate
    ```
-6. Run database migrations and seeders:
+6. Link your storage path to public folder:
+   ```sh
+   php artisan storage:link
+   ```
+7. Run database migrations and seeders:
    ```sh
    php artisan migrate && php artisan migrate:fresh --seed
    ```
-7. Start the Laravel development server:
+
+8. Start the Laravel development server:
    ```sh
    php artisan serve
    ```
